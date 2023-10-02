@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('music.jpg');
+            background-size: cover;
+            background-repeat: no-repeat ;
+            margin: 0;
+            padding: 0;
+        }
+        .logo-container{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .logo{
+            width: 100px;
+            height: 50px;
+        }
+        .navbar{
+            background-color: none;
+            text-align: center;
+            padding: 15px;
+            position: absolute;
+            top: 10px;
+            left: 200px;
+           
+            width: 80%;
+        }
+
+        ul.navbar {
+            list-style-type: none;
+            margin: 0px;
+            padding : 0px;
+            background-color:none;
+            overflow: hidden;
+        }
+        li.nav-item {
+            float: left;
+        }
+        li.nav-item a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: #3632a8;
+        }
+
+        
+            
+        
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo1.jpg" alt="logo" class="logo">
+
+    </div>
+    <ul class="navbar">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">Ticket Registration</a></li>
+        <li class="nav-item"><a href="#">Contact us</a></li>
+    </ul>
+    <div id="homeContent" class="content">
+        
+           
+    </div>
+    <script>
+        function showContent(section){
+            document.querySelectorAll('.content').forEach(function(element){
+                element.style.display = 'none';
+            });
+
+            document.getElementById(section+'content').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
